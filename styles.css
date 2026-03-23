@@ -1,0 +1,122 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container geral (recomendado adicionar no HTML) */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 40px;
+}
+
+/* IMAGEM */
+.image-logo {
+  width: 568px;
+  height: auto;
+}
+
+/* TEXTO */
+section {
+  max-width: 520px;
+}
+
+/* HEADER */
+header {
+  margin: 44px 0 144px 76px;
+}
+
+.link-header {
+  font-weight: 600;
+  font-size: 24px;
+  color: #989D9C;
+  margin-right: 23px;
+  cursor: pointer;
+}
+
+.button-header {
+  background: #665ae1;
+  border-radius: 20.5px;
+  width: 130px;
+  height: 41px;
+  border: none;
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* TEXTOS */
+h1 {
+  font-weight: 900;
+  font-size: 100px;
+  color: #515151;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 58px;
+  color: #515151;
+  margin-top: 40px;
+}
+
+p {
+  font-size: 24px;
+  color: #848484;
+  margin-top: 32px;
+  margin-bottom: 65px;
+}
+
+/* BOTÃO */
+.button-main {
+  background: #Adff00;
+  border-radius: 30px;
+  width: 239px;
+  height: 76px;
+  border: none;
+  font-weight: 700;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* 📱 RESPONSIVO */
+@media screen and (max-width: 900px) {
+
+  header {
+    display: none;
+  }
+
+  main {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .image-logo {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    display: none;
+  }
+}
